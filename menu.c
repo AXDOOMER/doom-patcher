@@ -39,6 +39,11 @@ int menu(unsigned char *exe)
 	
 	printf("     %-40s   [ %s ]\n" , "Max. sensitivity: 9 => 127", status);
 
+	for (int i = 0; i < 2; i++)
+	{
+		printf("%c. %s\n", menus[i][0], menus[i][1]);
+	}
+
 
 	printf("Please enter a number:\n");
 	printf("> ");

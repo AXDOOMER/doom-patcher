@@ -9,7 +9,7 @@
 
 
 // Max. sensitivity: 9 => 127
-unsigned int sens[][PATCHWIDTH] =
+static unsigned int sens[][PATCHWIDTH] =
 {
 	{0x00064972, 0x0A, 0x11},
 	{0x00064C8F, 0x09, 0x7F},

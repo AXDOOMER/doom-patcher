@@ -5,6 +5,7 @@
 
 #define DOOMSIZE 709905
 
+// RUN USING: gcc main.c menu.c && ./a.out
 int main()
 {
 	// Hacks for Doom2 v1.9
@@ -45,3 +46,4 @@ int main()
 
 	return i;
 }
+
