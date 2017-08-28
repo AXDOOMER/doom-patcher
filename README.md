@@ -1,2 +1,2 @@
 # doom-patcher
-A patching tools that can apply known hacks to the DOOM executable
+This is a patching tool that can apply multiple different hacks the Doom 2 version 1.9 executable.
