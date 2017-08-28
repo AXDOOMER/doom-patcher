@@ -54,7 +54,7 @@ def fill(str):
 # This indicates if the EXE file has had the patch applied
 def checkpatched(f, array):
 	if array == None:
-		return "[ INVALID ]"
+		return "";
 
 	vanilla = True
 	for pos in range(len(array)):
@@ -74,8 +74,6 @@ def checkpatched(f, array):
 		return "[ VANILLA ]"
 	if patched == True:
 		return "[ PATCHED ]"
-		
-		#print(hex(ord(f.read(1))))
 
 	return "[ PATCHED ]"
 
@@ -110,7 +108,7 @@ def main(argv):
 
 			while choice != 9:
 				for item in range(len(MENU)):
-					print(MENU[item][0] + ".\t" + fill(MENU[item][1]) + "\t" + checkpatched(f, MENU[item][2])) #str(MENU[item][2])
+					print(MENU[item][0] + ".\t" + fill(MENU[item][1]) + "\t" + checkpatched(f, MENU[item][2]))
 
 				choice = raw_input("Please, enter your choice: ")
 
