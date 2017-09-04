@@ -33,7 +33,7 @@ The extended stack size hack is incompatible with Doom plus.
 
 ### Credits
 
-Many thanks to the authors of the hacks who make them available on Doomworld. They are: Miguel Folatelli (aka myk), Andrey "entryway" Budko (aka e6y) and Colin Phipps (aka cph). If you can't find your name here and think I have forgotten you, then send me an email or contact me on Doomworld.
+Many thanks to the authors of the hacks who made them available on Doomworld. They are: Miguel Folatelli (aka myk), Andrey "entryway" Budko (aka e6y) and Colin Phipps (aka cph). If you can't find your name here and think I have forgotten you, then send me an email or contact me on Doomworld.
 
 ### Sumitting patches
 

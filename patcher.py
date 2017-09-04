@@ -498,6 +498,10 @@ def main(argv):
 	print("    Hacks for Doom2 v1.9")
 	print("===================================================")
 
+	if len(sys.argv) > 1:
+		global EXENAME
+		EXENAME = sys.argv[1]
+
 	try:
 		if os.stat(EXENAME).st_size == DOOMSIZE:
 
@@ -524,12 +528,10 @@ def main(argv):
 
 			f.close()
 		else:
-			print(EXENAME + " is not " + DOOMSIZE + " bytes.");
+			print(EXENAME + " is not " + str(DOOMSIZE) + " bytes.");
 	except (OSError, IOError) as e:
 		print(e)
 	pass
 
 if __name__ == "__main__":
 	main(sys.argv)
-
-
