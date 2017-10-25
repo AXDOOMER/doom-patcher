@@ -34,10 +34,6 @@ MEDINEED = [
 	[0x0006BE7B, 0x19, 0x32]
 ]
 
-DOORREOPEN = [
-	[0x000688C7, 0x14, 0x58]
-]
-
 FASTTWOSND = [
 	[0x00068926, 0xE8, 0x90],
 	[0x00068927, 0x59, 0x90],
@@ -52,16 +48,6 @@ OUCHFACE = [
 
 NOQ = [
 	[0x000638F6, 0x74, 0xEB]
-]
-
-DSCHGUN = [
-	[0x00040F95, 0xB0, 0xC8],
-	[0x00040F98, 0xB0, 0x00],
-	[0x00040F99, 0x48, 0x4E],
-	[0x00040F9A, 0x01, 0x02],
-	[0x0009D4C4, 0xB0, 0x00],
-	[0x0009D4C5, 0x48, 0x00],
-	[0x0009D4C6, 0x01, 0x00]
 ]
 
 EXTSTACK = [
@@ -428,17 +414,15 @@ LONGTICS = [
 # Global constants
 MENU = [
 	['1', "Increase max. mouse sensitivity: 9 => 127", SENSHACK],
-	['2', "Increase heap size to 32MB", HEAPSIZE],
+	['2', "Increase max. heap size to 32MB", HEAPSIZE],
 	['3', "Picked up a medikit that you REALLY need!", MEDINEED],
-	['4', "Fix fast doors reopening with wrong sound", DOORREOPEN],
-	['5', "Fix fast doors make two closing sounds", FASTTWOSND],
-	['6', "Ouch face fix", OUCHFACE],
-	['7', "Disable 'Q' key when recording demos", NOQ],
-	['8', "Use DPCHGUN/DSCHGUN for chaingunner's attack sound", DSCHGUN],
-	['9', "Extended stack allocation (64KB => 512KB)", EXTSTACK],
-	['10', "Enable sound pitch", SNDPITCH],
-	['11', "Doom plus", DOOMPLUS],
-	['12', "Long tics for demos", LONGTICS],
+	['4', "Fix fast doors make two closing sounds", FASTTWOSND],
+	['5', "Ouch face fix", OUCHFACE],
+	['6', "Disable 'Q' key when recording demos", NOQ],
+	['7', "Extended stack allocation (64KB => 512KB)", EXTSTACK],
+	['8', "Enable sound pitch", SNDPITCH],
+	['9', "Doom plus", DOOMPLUS],
+	['10', "Long tics for demos", LONGTICS],
 	['q', "--Quit this program--", None]
 ]
 MAXLENGTH = 52

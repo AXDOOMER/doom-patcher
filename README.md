@@ -19,14 +19,12 @@ Most of the hacks are cumulative, which means that applying a hack doesn't chang
 * Increase the maximum mouse sensitivity form 9 to 127
 * Increase the maximum heap size to 32MB
 * Display "Picked up a medikit that you REALLY need!"
-* Fix for fast doors reopening with wrong sound
 * Fix for fast doors that make two closing sounds
 * Fix for the ouch face
 * Disable 'Q' when recording demos
-* Use DPCHGUN/DSCHGUN for chaingunner's attack sound
 * Extend the stack allocation size (64KB => 512KB)
 * Enable random sound pitch
-* Increase the static limits to those of Doom plus
+* Increase the static limits to [those of Doom plus](http://prboom-plus.sourceforge.net/doom-plus.features.html)
 * Enable long tics
 
 The extended stack size hack is incompatible with Doom plus.
