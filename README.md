@@ -23,6 +23,7 @@ Most of the hacks are cumulative, which means that applying a hack doesn't chang
 * Fix for the ouch face
 * Disable 'Q' when recording demos
 * Extend the stack allocation size (64KB => 512KB)
+* Use DPCHGUN/DSCHGUN as the chaingunner's attack sound
 * Enable random sound pitch
 * Increase the static limits to [those of Doom plus](http://prboom-plus.sourceforge.net/doom-plus.features.html)
 * Enable long tics
@@ -31,7 +32,7 @@ The extended stack size hack is incompatible with Doom plus.
 
 ### Credits
 
-Many thanks to the authors of the hacks who made them available on Doomworld. They are: Miguel Folatelli (aka myk), Andrey "entryway" Budko (aka e6y) and Colin Phipps (aka cph). If you can't find your name here and think I have forgotten you, then send me an email or contact me on Doomworld.
+Many thanks to the authors of the hacks who made them available on Doomworld. They are: Miguel Folatelli (aka myk), Andrey "entryway" Budko (aka e6y), Colin Phipps (aka cph), Randy87 and xttl. If you can't find your name here and think I forgot you, then send me an email or contact me on Doomworld.
 
 ### Sumitting patches
 

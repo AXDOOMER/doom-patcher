@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 # Script by Alexandre-Xavier Labonte-Lamoureux aka AXDOOMER (2017)
 
 # Imports
@@ -48,6 +48,17 @@ OUCHFACE = [
 
 NOQ = [
 	[0x000638F6, 0x74, 0xEB]
+]
+
+DSCHGUN = [
+	[0x00069B02, 0x02, 0x56],
+	[0x00040F95, 0xB0, 0xC8],
+	[0x00040F98, 0xB0, 0x00],
+	[0x00040F99, 0x48, 0x4E],
+	[0x00040F9A, 0x01, 0x02],
+	[0x0009D4C4, 0xB0, 0x00],
+	[0x0009D4C5, 0x48, 0x00],
+	[0x0009D4C6, 0x01, 0x00]
 ]
 
 EXTSTACK = [
@@ -420,19 +431,20 @@ MENU = [
 	['5', "Ouch face fix", OUCHFACE],
 	['6', "Disable 'Q' key when recording demos", NOQ],
 	['7', "Extended stack allocation (64KB => 512KB)", EXTSTACK],
-	['8', "Enable sound pitch", SNDPITCH],
-	['9', "Doom plus", DOOMPLUS],
-	['10', "Long tics for demos", LONGTICS],
+	['8', "Use DPCHGUN/DSCHGUN as the chaingunner's attack sound", DSCHGUN],
+	['9', "Enable sound pitch", SNDPITCH],
+	['10', "Doom plus", DOOMPLUS],
+	['11', "Long tics for demos", LONGTICS],
 	['q', "--Quit this program--", None]
 ]
-MAXLENGTH = 52
+
 DOOMSIZE = 709905
 EXENAME = "DOOM2.EXE"
 
 # Fills the end of a string with spaces. The magic number
 # must be increased if the strings used get longer.
-def fill(str):
-	str += (" " * (MAXLENGTH - len(str)))
+def fill(str, length):
+	str += (" " * (length - len(str)))
 	return str
 
 # Returns a string [ PATCHED ], [ VANILLA ] or [ UNKNOWN ]
@@ -491,17 +503,14 @@ def main(argv):
 
 			f = open(EXENAME, "r+b")
 
-			choice = 0
-
-			while choice != 9:
+			while True:
 				for item in range(len(MENU)):
-					print(MENU[item][0] + ".\t" + fill(MENU[item][1]) + "\t" + checkpatched(f, MENU[item][2]))
+					print(fill(MENU[item][0] + ".", 8) + fill(MENU[item][1], 56) + checkpatched(f, MENU[item][2]))
 
 				choice = raw_input("\nPlease, enter your choice: ")
 
-				if choice == 'q' or choice == 'Q':
-					print("\nHave a nice day!  :-)\n")
-					quit()
+				if choice.lower() == 'q':
+					break
 
 				for item in range(len(MENU)):
 					if MENU[item][0] == choice:
@@ -510,6 +519,7 @@ def main(argv):
 
 				print("")
 
+			print("\nHave a nice day!  :-)\n")
 			f.close()
 		else:
 			print(EXENAME + " is not " + str(DOOMSIZE) + " bytes.");
