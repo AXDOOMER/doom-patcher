@@ -1,5 +1,5 @@
 #!/usr/bin/env python2
-# Script by Alexandre-Xavier Labonte-Lamoureux aka AXDOOMER (2017)
+# Script by Alexandre-Xavier Labonte-Lamoureux aka AXDOOMER (2017-2018)
 
 # Imports
 import sys
@@ -428,18 +428,18 @@ SSGFLASH = [
 
 # Global constants
 MENU = [
-	['1', "Increase max. mouse sensitivity: 9 => 127", SENSHACK],
-	['2', "Increase max. heap size to 32MB", HEAPSIZE],
-	['3', "Picked up a medikit that you REALLY need!", MEDINEED],
-	['4', "Fix fast doors make two closing sounds", FASTTWOSND],
-	['5', "Ouch face fix", OUCHFACE],
-	['6', "Fix SSG muzzle flash duration", SSGFLASH],
-	['7', "Disable 'Q' key when recording demos", NOQ],
-	['8', "Extended stack allocation (64KB => 512KB)", EXTSTACK],
-	['9', "Use DPCHGUN/DSCHGUN as the chaingunner's attack sound", DSCHGUN],
-	['10', "Enable sound pitch", SNDPITCH],
-	['11', "Doom plus", DOOMPLUS],
-	['12', "Long tics for demos", LONGTICS],
+	["Increase max. mouse sensitivity: 9 => 127", SENSHACK],
+	["Increase max. heap size to 32MB", HEAPSIZE],
+	["Picked up a medikit that you REALLY need!", MEDINEED],
+	["Fix fast doors make two closing sounds", FASTTWOSND],
+	["Ouch face fix", OUCHFACE],
+	["Fix SSG muzzle flash duration", SSGFLASH],
+	["Disable 'Q' key when recording demos", NOQ],
+	["Extended stack allocation (64KB => 512KB)", EXTSTACK],
+	["Use DPCHGUN/DSCHGUN as the chaingunner's attack sound", DSCHGUN],
+	["Enable sound pitch", SNDPITCH],
+	["Doom plus", DOOMPLUS],
+	["Long tics for demos", LONGTICS],
 	['q', "--Quit this program--", None]
 ]
 
@@ -508,6 +508,11 @@ def main(argv):
 
 			f = open(EXENAME, "r+b")
 
+			# Init menu
+			for line in range(len(MENU) - 1):
+				MENU[line].insert(0, str(line + 1))
+
+			# Main loop
 			while True:
 				for item in range(len(MENU)):
 					print(fill(MENU[item][0] + ".", 8) + fill(MENU[item][1], 56) + checkpatched(f, MENU[item][2]))
