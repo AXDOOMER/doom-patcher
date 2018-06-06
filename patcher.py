@@ -422,6 +422,10 @@ LONGTICS = [
 	[0x000A9476, 0x00, 0x74]
 ]
 
+SSGFLASH = [
+	[0x0009DF68, 0x05, 0x04]
+]
+
 # Global constants
 MENU = [
 	['1', "Increase max. mouse sensitivity: 9 => 127", SENSHACK],
@@ -429,12 +433,13 @@ MENU = [
 	['3', "Picked up a medikit that you REALLY need!", MEDINEED],
 	['4', "Fix fast doors make two closing sounds", FASTTWOSND],
 	['5', "Ouch face fix", OUCHFACE],
-	['6', "Disable 'Q' key when recording demos", NOQ],
-	['7', "Extended stack allocation (64KB => 512KB)", EXTSTACK],
-	['8', "Use DPCHGUN/DSCHGUN as the chaingunner's attack sound", DSCHGUN],
-	['9', "Enable sound pitch", SNDPITCH],
-	['10', "Doom plus", DOOMPLUS],
-	['11', "Long tics for demos", LONGTICS],
+	['6', "Fix SSG muzzle flash duration", SSGFLASH],
+	['7', "Disable 'Q' key when recording demos", NOQ],
+	['8', "Extended stack allocation (64KB => 512KB)", EXTSTACK],
+	['9', "Use DPCHGUN/DSCHGUN as the chaingunner's attack sound", DSCHGUN],
+	['10', "Enable sound pitch", SNDPITCH],
+	['11', "Doom plus", DOOMPLUS],
+	['12', "Long tics for demos", LONGTICS],
 	['q', "--Quit this program--", None]
 ]
 
