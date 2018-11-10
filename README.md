@@ -2,9 +2,9 @@
 
 This is a patching tool that can apply multiple different hacks to the Doom 2 version 1.9 executable (709905 bytes).
 
-This utility is made from a cumulation of hacks that were distributed on [Doomworld](https://www.doomworld.com/) over the years.
+This utility is a collection of hacks that were distributed on [Doomworld](https://www.doomworld.com/) over the years.
 
-Most of the hacks are cumulative, which means that applying a hack doesn't change the bytes at an offset used by another hack.
+Most of the hacks are cumulative, which means that applying a hack doesn't change the bytes at an offset used by another hack, so you can use many of these hacks at the same time. 
 
 ### Glossary
 
