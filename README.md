@@ -29,6 +29,7 @@ Most of the hacks are cumulative, which means that applying a hack doesn't chang
 * Enable random sound pitch
 * Increase the static limits to [those of Doom plus](http://prboom-plus.sourceforge.net/doom-plus.features.html)
 * Enable long tics
+* Replace 'Deathmatch 1.0' with 'Deathmatch 3.0'
 
 The extended stack size hack is incompatible with Doom plus.
 

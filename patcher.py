@@ -464,6 +464,11 @@ ARCHFIRE = [
 	[0x0006A376, 0x8D, 0xC3]
 ]
 
+DM3 = [
+	[0x00060018, 0x01, 0x03],
+	[0x00073712, 0x85, 0x82]
+]
+
 # Global constants
 MENU = [
 	["Increase max. mouse sensitivity: 9 => 127", SENSHACK],
@@ -479,6 +484,7 @@ MENU = [
 	["Enable sound pitch", SNDPITCH],
 	["Doom plus", DOOMPLUS],
 	["Long tics for demos", LONGTICS],
+	["Use 'Deathmatch 3.0' rules for deathmatch", DM3],
 	['q', "--Quit this program--", None]
 ]
 
