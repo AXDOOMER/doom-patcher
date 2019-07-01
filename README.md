@@ -22,6 +22,7 @@ Most of the hacks are cumulative, which means that applying a hack doesn't chang
 * Fix for fast doors that make two closing sounds
 * Fix for the ouch face
 * Fix for the duration of the SSG's muzzle flash
+* Fix Arch-Vile fire spawned at the wrong location
 * Disable 'Q' when recording demos
 * Extend the stack allocation size (64KB => 512KB)
 * Use DPCHGUN/DSCHGUN as the chaingunner's attack sound
