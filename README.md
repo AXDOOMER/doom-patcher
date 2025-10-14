@@ -8,7 +8,7 @@ Most of the hacks are cumulative, which means that applying a hack doesn't chang
 
 ### Glossary
 
-`VANILLA`: The hack is not detected. The bytes at the offsets where the patch does the changes are the same as vanilla.
+`VANILLA`: The hack is not detected. The bytes at the offsets where the patch makes the changes are the same as vanilla.
 
 `PATCHED`: The executable is already patched with this hack.
 
@@ -16,7 +16,7 @@ Most of the hacks are cumulative, which means that applying a hack doesn't chang
 
 ### List of hacks
 
-* Increase the maximum mouse sensitivity form 9 to 127
+* Increase the maximum mouse sensitivity from 9 to 127
 * Increase the maximum heap size to 32MB
 * Display "Picked up a medikit that you REALLY need!"
 * Fix for fast doors that make two closing sounds
@@ -27,18 +27,18 @@ Most of the hacks are cumulative, which means that applying a hack doesn't chang
 * Extend the stack allocation size (64KB => 512KB)
 * Use DPCHGUN/DSCHGUN as the chaingunner's attack sound
 * Enable random sound pitch
-* Increase the static limits to [those of Doom plus](http://prboom-plus.sourceforge.net/doom-plus.features.html)
+* Increase the static limits to [those of Doom+](http://prboom-plus.sourceforge.net/doom-plus.features.html)
 * Enable long tics
 * Replace 'Deathmatch 1.0' with 'Deathmatch 3.0'
 * Make the startup banner blue
 
-The extended stack size hack is incompatible with Doom plus.
+The extended stack size hack is incompatible with Doom+.
 
 ### Credits
 
 Many thanks to the authors of the hacks who made them available on Doomworld. They are: Miguel Folatelli (aka myk), Andrey "entryway" Budko (aka e6y), Colin Phipps (aka cph), Randy87 and xttl. If you can't find your name here and think I forgot you, then send me an email or contact me on Doomworld.
 
-### Sumitting patches
+### Submitting patches
 
 On GNU/Linux, you can easily create a patch to be added to this script using this command:
 
